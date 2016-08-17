@@ -1,0 +1,72 @@
+header {
+  text-align: right;
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  .header-bg {
+    background-color: green;
+    transform: rotate(1deg) scale(1.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  > label {
+    font-size: 2rem;
+    position: relative;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    background: rgba(0, 0, 0, .2);
+    z-index: 5;
+    color: $color-gray;
+    transition: .5s left, .5s background;
+    overflow: auto;
+    > label {
+      display: block;
+      font-size: 4rem;
+      float: right;
+      line-height: 4rem;
+      width: 4rem;
+      text-align: center;
+    }
+    > div {
+      max-width: 662px;
+      margin: 4rem auto;
+      > a {
+        font-size: 1rem;
+        display: block;
+        float: left;
+        width: 50%;
+        text-align: center;
+        padding: 2rem 0;
+        transition: .3s color, .3s transform;
+        span {
+          display: block;
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+        &:hover {
+          transform: scale(1.1);
+          color: $color-white;
+        }
+      }
+      > div {
+        border-top: 2px solid #FFF;
+        padding: 1rem;
+        clear: both;
+        text-align: center;
+      }
+    }
+  }
+  input:checked + nav {
+    display: block;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+  }
+}
