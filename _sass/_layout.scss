@@ -6,4 +6,15 @@ article {
   max-width: 760px;
   margin: 1rem auto;
   padding: 1rem;
+  background: $color-white;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
