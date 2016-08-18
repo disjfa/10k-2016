@@ -1,5 +1,6 @@
 .container {
   overflow: hidden;
+  padding-bottom: 100px;
 }
 
 article {
@@ -15,7 +16,7 @@ article {
     figcaption {
       font-size: 2rem;
     }
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       float: left;
       width: 33%;
     }
@@ -45,14 +46,90 @@ article {
 .bg-sun-flowers {
   background: $sun-flower;
 }
+
 .bg-pommegrenade {
   background: $pomegranate;
 }
-
 
 .inversed {
   color: $inverse;
   a {
     color: $gray-light;
   }
+}
+
+.blocks {
+  margin: 0 -2%;
+  .block {
+    @media screen and (min-width: 768px) {
+      width: 29%;
+      float: left;
+
+    }
+    margin: 2%;
+    display: block;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: $wisteria;
+    border: 2px solid $amethyst;
+    background-color: $inverse;
+    height: 100px;
+    position: relative;
+    transition: .3s background;
+    h2, p {
+      transition: .3s all;
+    }
+    h2 {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+    }
+    p {
+      position: absolute;
+      top: 40px;
+      right: 1rem;
+    }
+    &:hover {
+      color: $gray-light;
+      background-color: $wisteria;
+      h2 {
+        top: 3rem;
+      }
+      p {
+        top: 1rem;
+      }
+    }
+
+    &.bg-pommegrenade {
+      color: $pomegranate;
+      border-color: $carrot;
+      &:hover {
+        color: $gray-light;
+        background-color: $pomegranate;
+      }
+    }
+    &.bg-midnight-blue {
+      color: $midnight-blue;
+      border-color: $wet-asphalt;
+      &:hover {
+        color: $gray-light;
+        background-color: $midnight-blue;
+      }
+    }
+    &.bg-green-sea {
+      color: $green-sea;
+      border-color: $turquoise;
+      &:hover {
+        color: $gray-light;
+        background-color: $green-sea;
+      }
+    }
+  }
+}
+
+code {
+  background: $gray-light;
+  color: $midnight-blue;
+  border-radius: 3px;;
+  padding: 0 4px ;
 }
