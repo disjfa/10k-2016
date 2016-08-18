@@ -7,10 +7,12 @@ permalink: /
 <html lang="en">
 {% include head.html %}
 <body>
-<main>
-{% include header.html %}
-    {{ content }}
-</main>
-{% include footer.html %}
+<div class="container">
+    {% include header.html %}
+    <main role="main">
+        {{ content }}
+    </main>
+    {% include footer.html %}
+</div>
 </body>
 </html>

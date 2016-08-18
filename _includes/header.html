@@ -1,28 +1,30 @@
-<header>
+<header role="banner">
     <div class="header-bg"></div>
-    <label for="menu">
-        &#9776; Menu
+    <a href="{{ site.baseurl }}/" class="brand">
+        &#10048;
+    </a>
+    <label for="menu-toggle" aria-label="Opens the menu">
+        &#9778;
     </label>
-    <input type="checkbox" name="menu" id="menu">
-    <nav>
-
-        <label for="menu">
+    <input type="checkbox" name="menu-toggle" id="menu-toggle" aria-controls="menu">
+    <nav id="menu" role="navigation">
+        <label for="menu-toggle">
             &#215;
         </label>
         <div>
-            <a href="{{ site.baseurl }}/">
+            <a href="{{ site.baseurl }}/" aria-label="Go to the home page">
                 <span>&#9733;</span>
                 Home
             </a>
-            <a href="{{ site.baseurl }}/about">
+            <a href="{{ site.baseurl }}/about" aria-label="Go to the about page">
                 <span>&#10084;</span>
                 About
             </a>
-            <a href="#">
+            <a href="#" aria-label="Etc">
                 <span>&#9832;</span>
                 ect...
             </a>
-            <div>{{ site.description }}</div>
+            <p>{{ site.description }}</p>
         </div>
     </nav>
 </header>
