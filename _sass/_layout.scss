@@ -76,6 +76,7 @@ article {
     height: 100px;
     position: relative;
     transition: .3s background;
+    border-radius: 3px;
     h2, p {
       transition: .3s all;
     }
@@ -125,11 +126,4 @@ article {
       }
     }
   }
-}
-
-code {
-  background: $gray-light;
-  color: $midnight-blue;
-  border-radius: 3px;;
-  padding: 0 4px ;
 }
