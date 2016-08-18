@@ -1,5 +1,5 @@
 # 10k-2016
-Project for the 10k apart project
+Project for the 10k apart project, check it out <a href="https://disjfa.github.io/10k-2016/">here</a>.
 
 # A k apart.
 
