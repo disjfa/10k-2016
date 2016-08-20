@@ -10,7 +10,7 @@ module.exports = function (grunt) {
             },
             master: {
                 options: {
-                    remote: 'git@github.com:disjfa/glynn-admin.git',
+                    remote: 'git@github.com:disjfa/10k-2016.git',
                     branch: 'master'
                 }
             }
